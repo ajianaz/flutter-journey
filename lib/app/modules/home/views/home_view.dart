@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_journey/app/routes/app_pages.dart';
 
 import 'package:get/get.dart';
 
@@ -13,11 +14,15 @@ class HomeView extends GetView<HomeController> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+          child: Column(
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.SIGNATURE_PAD);
+              },
+              child: Text("TTD"))
+        ],
+      )),
     );
   }
 }
