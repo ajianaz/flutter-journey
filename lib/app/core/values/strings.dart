@@ -1,0 +1,1 @@
+var appName = "Flutter Journey";
