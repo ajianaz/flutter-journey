@@ -9,7 +9,7 @@ import 'package:syncfusion_flutter_signaturepad/signaturepad.dart';
 /// Local imports
 // import '../../../model/sample_view.dart';
 import '../../../global_widgets/shared/mobile_image_converter.dart'
-    if (dart.library.html) '../shared/web_image_converter.dart';
+    if (dart.library.html) '../../../global_widgets/shared/web_image_converter.dart';
 
 class SignaturePadController extends GetxController {
   RxBool isSigned = RxBool(false);
